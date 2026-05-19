@@ -4,8 +4,6 @@
 
 Montei esse diagrama no Draw.io para ilustrar o fluxo de ponta a ponta do que foi feito no laboratório:
 
-![Arquitetura do Desafio]
-
 ### Entendendo o fluxo:
 1. **O Início:** O usuário (`Actor`) envia arquivos do seu computador para o **Volume EBS Original**, que está atrelado à nossa instância **EC2** base. Essa máquina também se conecta a um banco de dados **RDS**.
 2. **Segurança (Snapshot):** Criamos um **EBS Snapshot** direto do volume original. Ele funciona como um backup incremental dos arquivos (salva só o que mudou, economizando custos).
